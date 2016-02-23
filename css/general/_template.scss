@@ -1,0 +1,73 @@
+html{
+	font-size: 100%;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+}
+html,
+body,
+.container {
+	height: 100%;
+    width: 100%;
+}
+body {
+	font: $basefont $regular;
+	color: $textColor;
+	background-color: $white;
+	line-height: 1.6;
+	position: relative;
+	word-wrap: break-word;
+	@include select-color();
+}
+
+.container {
+	height: auto;
+	min-height: 100%;
+}
+
+.main {
+	@extend .i-container;
+	@extend .clearfix;
+	padding-bottom: $footerHeight;
+	position: relative;
+}
+@font-face {
+  font-family: 'FSElliotProBold';
+  src: url(../fonts/FSElliotPro-Bold.otf);
+}
+@font-face {
+  font-family: 'FSElliotPro';
+  src: url(../fonts/FSElliotPro.otf);
+}
+@font-face {
+  font-family: 'FSElliotProLight';
+  src: url(../fonts/FSElliotPro-Light.otf);
+}
+@font-face {
+  font-family: 'FSElliotProBoldReg';
+  src: url(../fonts/FSElliotPro.otf);
+}
+@font-face {
+  font-family: 'FSElliotProLight';
+  src: url(../fonts/FSElliotPro-Light.otf);
+}
+
+@font-face {
+  font-family: 'PFDinTextCompProMed';
+  src: url(../fonts/PFDinTextCompPro-Medium.ttf);
+}
+@font-face {
+  font-family: 'PFDinTextCompProLight';
+  src: url(../fonts/PFDinTextCompPro-Light.ttf);
+}
+@font-face {
+  font-family: 'PFDinTextCompProThin';
+  src: url(../fonts/PFDinTextCompPro-Thin.ttf);
+}
+@font-face {
+  font-family: 'FSElliotProHeavy';
+  src: url(../fonts/FSElliotPro-Heavy.otf);
+}
+@font-face {
+  font-family: 'FSElliotProThin';
+  src: url(../fonts/FSElliotPro-Thin.otf);
+}

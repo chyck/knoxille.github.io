@@ -1,0 +1,86 @@
+$basefont: 14px;
+$bigfont: 16px;
+$smallfont: 11px;
+
+$baseline: $basefont * 1.6;
+$gutterWidth: 20px;
+
+$regular: Tahoma, Arial, sans-serif;
+$italic: Arial, sans-serif;
+$bold: Tahoma, Arial, sans-serif;
+
+$titleFamily: "Open Sans", Georgia, Times, serif; // заголовки
+
+// ширина
+$fixedWidth: 960px;
+$maxWidth: $fixedWidth;
+$minWidth: $fixedWidth;
+
+// высота
+$headerHeight: 105px;
+$footerHeight: 50px;
+
+// color scheme
+$themeColorLight: #f2f1f1;
+$themeColorDark: #051a1f;
+$themeGray: #5b6f73;
+$gray: #999;
+$grayLight: #5d787d;
+$black: #000;
+
+$themeBlue: #2b5a64;
+$themeBlueDark: #20434a;
+$themeGreen: #19353b;
+$themeGreenDark: #052b33;
+
+$orangeLight: #e79a00;
+$themeOrange: #d54500;
+$orangeDark: #b44600;
+$orangeBright: #e87300;
+
+// цвет текста
+$textColor: $themeGray;
+$textColorSidebar: $grayLight;
+
+// цвет фона
+$bgcMain: $themeGreenDark;
+$bgcSecondary: $black;
+$bgcSidebar: $themeColorDark;
+
+// hr
+$hrColor: #26464d;
+
+/////////////////////////////////////////
+// повышаем читабельность основных цветов
+$white: #fff;
+$grayed: #656b70;
+$red: #ff0000;
+$pink: #ff00cc;
+$violet: #cc00ff;
+$blue: #0000ff;
+$green: #66CC00;
+$yellow: #F0CA03;
+$orange: #ff9900;
+$dark: #1c202b;
+
+// цвет ссылок
+$linkColor: #0094dc;
+$linkColorHover: $red;
+$linkColorActive: darken($red, 25);
+$linkColorVisited: $linkColor;
+
+// цвет фона выделения текста на странице
+$selectionColor: #b4d5fe;
+
+// настройки форм
+$form-bgc: $white;
+$form-bdc: $gray;
+$form-c: #444;
+$form-focus: #ee5f5b;
+
+$placeholderColor: lighten($black, 30);
+
+
+
+
+

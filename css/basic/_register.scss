@@ -1,0 +1,113 @@
+.top-area_register{
+  width: 100%;
+  height: 760px;
+  background-color: #0C0E0D;
+  background: url(../images/reg-peoples.png) 50% 50% no-repeat;
+  max-width: 1920px;
+  margin: 0 auto;
+  &__inner{
+    width: 960px;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+    &-text{
+      span{
+        font: 40px 'FSElliotProHeavy';
+        color: $white;
+        @include ib-icons(box-page-stain);
+        width: auto;
+        position: absolute;
+        text-align: center;
+        padding-top: 93px;
+        top: -235px;
+        left: -82px;
+        padding-left: 75px;
+      }
+      font: 66px 'PFDinTextCompProLight';
+      color: #ebe803;
+      position: absolute;
+      bottom: -106px;
+      z-index: 10;
+    }
+  }
+}
+
+.graphick{
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  position: relative;
+  .color-list{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 225px;
+    z-index: 1;
+    &__item{
+      height: 160px;
+      &_light{
+        background-color: #F9F9F9;
+      }
+      &_gray{
+        background-color: #F3F3F3;
+      }
+      &_first{
+        height: 40px;
+        background-color: #EBE832;
+      }
+    }
+  }
+  &__inner{
+    width: 960px;
+    margin: 0 auto;
+    padding-top: 175px;
+    position: relative;
+    z-index: 10;
+    .days{
+      &__list{
+        &__item{
+          float: left;
+          width: 33.3%;
+          height: 50px;
+          &_firest{
+            text-align: left;
+          }
+          &_second{
+            text-align: center;
+          }
+          &_third{
+            text-align: right;
+          }
+          span{
+            font: 20px 'PFDinTextCompProMed';
+            color: #aaaaaa;
+          }
+        }
+      }
+    }
+  }
+  &-table{
+    &-inf{
+      width: 100%;
+      tr{
+        th{
+          height: 40px;
+          text-align: left;
+          font: 11px 'FSElliotPro';
+          color: #000000;
+          vertical-align: middle;
+          width: 25%;
+        }
+        td{
+          height: 160px;
+          text-align: left;
+          font: 12px 'FSElliotProHeavy';
+          color: #000000;
+          vertical-align: middle;
+          width: 25%;
+        }
+      }
+    }
+  }
+}
