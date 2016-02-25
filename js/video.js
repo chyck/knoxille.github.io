@@ -58,9 +58,16 @@ $( document ).ready(function() {
             showMovie();
         }
         else {
-            hideMovie();
-
-        }
+            if($movie.get(0).paused){
+                $movie.get(0).play();
+                $playBtn.css({'display':'none'})
+            }
+    }
+        $movie.bind("ended", function(){
+            $playBtn.css({
+                'display': 'block'
+            }, 1000)
+        });
 
     });
     $closeBtn.on("click", function () {

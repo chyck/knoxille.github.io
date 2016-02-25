@@ -1,0 +1,764 @@
+@media screen and (max-width: 960px) {
+  html{
+    overflow: auto;
+  }
+  body{
+    background-color: #151615;
+    overflow: hidden;
+    .header{
+
+      &__inner{
+        width: 100%;
+        height: 100%;
+        max-width: 100%;
+        min-width: 100%;
+        position: relative;
+        .logo-area{
+          margin-left: 50px;
+        }
+      }
+      .navigation{
+        position: absolute;
+        right: 0;
+        background-color: black;
+        margin: 0;
+        width: 50%;
+        z-index: 9999999;
+        &__list{
+          margin-top: 120px;
+          float: none;
+          margin-right: 0;
+          &:before{
+            content: '';
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 80px;
+            background-color: #313133;
+          }
+          &__item{
+            display: block;
+            width: 100%;
+            height: 80px;
+            padding-top: 26px;
+            margin: 0;
+            padding-left: 100px;
+            a{
+              font: 23px 'FSElliotProBold';
+              color: #ede900;
+            }
+          }
+          .current-page{
+            background-color: #EDE900;
+            color: #000000;
+          }
+        }
+      }
+      .lang-list{
+        position: absolute;
+        bottom: 50px;
+        left: 90px;
+        &__item{
+          a{
+            border: 1px solid #0A0A0A;
+            color: #ffffff;
+          }
+          a.current-lang{
+            border: 1px solid #0A0A0A;
+            color: #ECE932;
+          }
+        }
+      }
+      .js-btn{
+        display: block;
+        height: 23px;
+        width: 23px;
+        position: absolute;
+        right: 30px;
+        top: 30px;
+        z-index: 99999999;
+
+        &-show-nav{
+          background: url("../images/mobile/open-lines.png") 50% 50% no-repeat;
+        }
+        &-hide-nav{
+          background: url("../images/mobile/close-croos.png")50% 50% no-repeat;
+        }
+      }
+    }
+  }
+  .top-area{
+    margin-top: 0;
+  }
+  .main-page{
+    .mobile-header{
+      display: block;
+      font: 60px 'FSElliotProHeavy';
+      color: white;
+    }
+    .trx{
+      background-image: none;
+      background-color: #0B0D0C;
+      &__inner{
+        width: 100%;
+        max-width: 100%;
+        padding: 60px 60px 120px 60px;
+        .training{
+          padding-right: 0;
+          &-text{
+            font-size: 30px;
+            line-height: 35px;
+          }
+        }
+        .trx-stain{
+          display: none;
+        }
+        .personal{
+          padding-right: 0;
+          &__list{
+            dt{
+              font-size: 25px;
+            }
+            dd{
+              font-size: 20px;
+              line-height: 35px;
+            }
+          }
+        }
+      }
+      &:before{
+        content: '';
+        width: 100%;
+        height: 105px;
+        position: absolute;
+        background-color: #313133;
+        bottom: -28px;
+        z-index: 100;
+      }
+      &:after{
+        content: '01';
+        position: absolute;
+        color: #313133;
+        font: 100px 'FSElliotProBold';
+        bottom: 45px;
+        right: 0;
+      }
+    }
+    .box{
+      background-image: none;
+      background-color: #151716;
+      &__inner{
+        width: 100%;
+        max-width: 100%;
+        padding: 60px 60px 120px 60px;
+        .all-in-one{
+          padding-right: 0;
+          &-text{
+            font-size: 30px;
+            line-height: 35px;
+          }
+        }
+        .box-stain{
+          display: none;
+        }
+        .group{
+          padding-right: 0;
+          &__list{
+            dt{
+              font-size: 25px;
+            }
+            dd{
+              font-size: 20px;
+              line-height: 35px;
+            }
+          }
+        }
+      }
+      &:before{
+        content: '';
+        width: 100%;
+        height: 105px;
+        position: absolute;
+        background-color: #ECE932;
+        bottom: -28px;
+        z-index: 100;
+      }
+      &:after{
+        content: '02';
+        position: absolute;
+        color: #ECE932;
+        font: 100px 'FSElliotProBold';
+        bottom: 45px;
+        right: 0;
+      }
+    }
+    .bar{
+      background-image: none;
+      background-color: #0B0D0C;
+      height: auto;
+      padding-bottom: 150px;
+      &__inner{
+        width: 100%;
+        max-width: 100%;
+        padding: 60px 60px 0 60px;
+        .bar-training{
+          padding-right: 0;
+          &-text{
+            font-size: 30px;
+            line-height: 35px;
+          }
+        }
+        .seasonal{
+          display: none;
+        }
+        .menu{
+          padding-right: 0;
+          &__list{
+            dt{
+              font-size: 25px;
+            }
+            dd{
+              font-size: 20px;
+              line-height: 35px;
+            }
+          }
+        }
+      }
+      &:before{
+        content: '';
+        width: 100%;
+        height: 105px;
+        position: absolute;
+        background-color: #313133;
+        bottom: -28px;
+        z-index: 100;
+      }
+      &:after{
+        content: '03';
+        position: absolute;
+        color: #313133;
+        font: 100px 'FSElliotProBold';
+        bottom: 45px;
+        right: 0;
+      }
+    }
+    .side-left, .side-right{
+      display: none;
+    }
+  }
+  .top-area{
+    &__inner{
+      height: auto;
+      .posibility-list{
+        &__item{
+          position: static;
+          display: block;
+          height: 450px;
+          width: 100%;
+          transform: rotate(0deg);
+          img{
+            display: none;
+          }
+          &_trx{
+            background: url("../images/mobile/trx-mob.png") 50% 50% no-repeat;
+            background-size: cover;
+          }
+          &_box{
+            background: url("../images/mobile/box-mob.png") 50% 50% no-repeat;
+            background-size: cover;
+          }
+          &_bar{
+            background: url("../images/mobile/bar-mob.png") 50% 50% no-repeat;
+            background-size: cover;
+          }
+          a{
+            background-image: none;
+          }
+          span{
+            display: none;
+          }
+        }
+      }
+    }
+    &_trx{
+      height: 650px;
+      width: 100%;
+      max-width: 100%;
+      background-image: url("../images/mobile/trx-page-mob.png");
+      background-size: cover;
+      margin-top: 0;
+      &__inner{
+        width: 100%;
+        padding: 60px 60px 120px 60px;
+        &-text{
+          font-size: 42px;
+          bottom: -58px;
+          span{
+            background-image: url("../images/mobile/mobile-top-pt.png");
+            position: absolute;
+            height: 132px;
+            width: 155px;
+            font-size: 30px;
+            text-align: left;
+            padding-top: 45px;
+            padding-left: 38px;
+            top: -150px;
+            left: -28px;
+          }
+        }
+      }
+    }
+    &_box{
+      height: 650px;
+      width: 100%;
+      max-width: 100%;
+      background-image: url("../images/mobile/box-page-mob.png");
+      background-size: cover;
+      &__inner{
+        width: 100%;
+        padding: 60px 60px 120px 60px;
+        &-text{
+          span{
+            background-image: url("../images/mobile/mobile-top-pt.png");
+            position: absolute;
+            height: 132px;
+            width: 155px;
+            font-size: 30px;
+            text-align: left;
+            padding-top: 45px;
+            padding-left: 38px;
+            top: -150px;
+            left: -28px;
+          }
+          font-size: 42px;
+        }
+      }
+    }
+    &_bar{
+      height: 650px;
+      width: 100%;
+      max-width: 100%;
+      background-image: url("../images/mobile/bar-page-mob.png");
+      background-size: cover;
+      &__inner{
+        width: 100%;
+        padding: 60px;
+        &-text{
+          font-size: 42px;
+          bottom: -58px;
+          span{
+            background-image: url("../images/mobile/mobile-top-pt.png");
+            position: absolute;
+            height: 132px;
+            width: 155px;
+            font-size: 30px;
+            text-align: left;
+            padding-top: 45px;
+            padding-left: 38px;
+            top: -150px;
+            left: -28px;
+          }
+        }
+      }
+    }
+    &_shop{
+      height: 650px;
+      width: 100%;
+      max-width: 100%;
+      background-image: url("../images/mobile/shop-page-mob.png");
+      background-size: cover;
+      &__inner{
+        width: 100%;
+        padding: 0 60px;
+        &-text{
+          font-size: 42px;
+          bottom: -58px;
+          span{
+            background-image: url("../images/mobile/mobile-top-pt.png");
+            position: absolute;
+            height: 132px;
+            width: 155px;
+            font-size: 30px;
+            text-align: left;
+            padding-top: 45px;
+            padding-left: 30px;
+            top: -150px;
+            left: -28px;
+          }
+        }
+      }
+    }
+    &_get-card{
+      height: 550px;
+      width: 100%;
+      max-width: 100%;
+      background-image: url("../images/mobile/get-card-page-mob.png");
+      background-size: cover;
+      &__inner{
+        width: 100%;
+        padding: 0 60px;
+        &-text{
+          font-size: 42px;
+          bottom: -58px;
+          span{
+            background-image: url("../images/mobile/mobile-top-pt.png");
+            position: absolute;
+            height: 132px;
+            width: 155px;
+            font-size: 30px;
+            text-align: left;
+            padding-top: 45px;
+            padding-left: 30px;
+            top: -150px;
+            left: -28px;
+          }
+        }
+      }
+    }
+  }
+  .trx, .box{
+    &-personal-training{
+      width: 100%;
+      max-width: 100%;
+      background-image: none;
+      background-color: #151615;
+      height: auto;
+      &__inner{
+        width: 100%;
+        padding: 40px 60px 100px 60px;
+        height: auto;
+        .trx-page-stain-personal-header, .box-page-stain-personal-header{
+          background: url("../images/mobile/mobile-stain.png") 0 0 no-repeat;
+          height: 120px;
+          padding-top: 8px;
+          margin-left: -67px;
+        }
+      }
+      &:before{
+        content: '';
+        width: 100%;
+        height: 105px;
+        position: absolute;
+        background-color: #ECE932;
+        bottom: -28px;
+        z-index: 100;
+      }
+      &:after{
+        content: '01';
+        position: absolute;
+        color: #ECE932;
+        font: 100px 'FSElliotProBold';
+        bottom: 45px;
+        right: 0;
+      }
+    }
+    &-group-training{
+      width: 100%;
+      max-width: 100%;
+      background-color: #252726;
+      background-image: none;
+      height: auto;
+      &__inner{
+        width: 100%;
+        padding: 40px 60px;
+        display: inline-block;
+        .trx-page-stain-personal-header, .box-page-stain-personal-header{
+          background: url("../images/mobile/mobile-stain.png") 0 0 no-repeat;
+          height: 120px;
+          padding-top: 8px;
+          margin-left: -67px;
+        }
+      }
+      &:before{
+        content: '';
+        width: 100%;
+        height: 105px;
+        position: absolute;
+        background-color: #ECE932;
+        bottom: -28px;
+        z-index: 100;
+      }
+      &:after{
+        content: '02';
+        position: absolute;
+        color: #ECE932;
+        font: 100px 'FSElliotProBold';
+        bottom: 45px;
+        right: 0;
+      }
+    }
+    &-outdoor-training{
+      width: 100%;
+      max-width: 100%;
+      background-color: #0c0e0d;
+      background-image: none;
+      &__inner{
+        width: 100%;
+        padding: 0 60px 60px 60px;
+        .trx-page-stain-personal-header, .box-page-stain-personal-header{
+          background: url("../images/mobile/mobile-stain.png") 0 0 no-repeat;
+          height: 120px;
+          padding-top: 8px;
+          padding-left: 60px;
+          margin-left: -67px;
+        }
+      }
+      &:after{
+        content: '03';
+        position: absolute;
+        color: #ffffff;
+        font: 100px 'FSElliotProBold';
+        bottom: 0;
+        right: 0;
+        line-height: 65px;
+      }
+    }
+    .trx-page-stain-personal-header, .box-page-stain-personal-header{
+      background: url("../images/mobile/mobile-stain.png") 0 0 no-repeat;
+      height: 120px;
+      margin-left: -67px;
+    }
+  }
+  .menu-price{
+    &__inner{
+      padding: 80px 60px 0 60px;
+      text-align: left;
+      width: 100%;
+      .product-table{
+        float: none;
+        width: 100%;
+        &_left{
+          float: none;
+        }
+        &_righr{
+          float: none;
+        }
+        &-section{
+          .name{
+            font-size: 34px;
+          }
+          .size{
+            text-align: right;
+            font-size: 25px;
+          }
+          .price{
+            text-align: right;
+            font-size: 25px;
+          }
+          .yellow{
+            font-size: 36px;
+          }
+        }
+      }
+      .bar-page-stain-personal-header{
+        background: url("../images/mobile/mobile-stain.png") 0 0 no-repeat;
+        height: 120px;
+        padding-top: 6px;
+        padding-left: 65px;
+        margin-left: -67px;
+      }
+    }
+  }
+  .sport-products{
+    &__inner{
+      width: 100%;
+      &__item{
+        width: 49%;
+        height: 480px;
+        overflow: hidden;
+        .info{
+          width: 100%;
+          .type{
+            font-size: 26px;
+          }
+          .dest{
+            font-size: 25px;
+          }
+          .price{
+            font-size: 26px;
+          }
+        }
+      }
+    }
+  }
+  .get-card-page{
+    .subscription{
+      &__inner{
+        width: 100%;
+        .get-card-form{
+          .wrapper{
+            width:49%;
+          }
+        }
+      }
+      &-plan{
+        height: auto;
+        padding: 0 60px;
+        &__header{
+          margin: 40px auto auto 0;
+          .spot{
+            margin-left: -45px;
+          }
+        }
+        &__paragraph{
+          font-size: 38px;
+        }
+        .left{
+          float: none;
+          width: 100%;
+          .spot{
+            &_season{
+              margin-left: -45px;
+            }
+          }
+        }
+        .right{
+          float: none;
+          width: 100%;
+          text-align: left;
+          position: relative;
+          padding-top: 60px;
+          &-top{
+            position: absolute;
+            right: 0;
+            top: 20px;
+            margin: 0;
+            .contract{
+              font-size: 24px;
+              &:before{
+                content: '';
+                top: -4px;
+              }
+            }
+          }
+        }
+      }
+      .contract-description{
+        font-size: 20px;
+        line-height: 32px;
+      }
+      .number{
+        font-size: 160px;
+        line-height: 121px;
+        right: 0;
+        text-align: right;
+        &_one{
+          line-height: 107px;
+        }
+      }
+    }
+  }
+  .video-area{
+    text-align: center;
+    height: auto;
+    &__inner{
+      width: 100%;
+      display: inline-block;
+      .video{
+        float: none;
+        margin: 60px auto 70px;
+      }
+      padding: 85px 60px 0 60px;
+      .video-description{
+        float: none;
+        display: block;
+        width: 100%;
+        text-align: left;
+        dl{
+          dt{
+            font-size: 35px;
+          }
+          dd{
+            font-size: 20px;
+            margin-top: 35px;
+          }
+        }
+      }
+    }
+  }
+  .form-area{
+    &__inner{
+      width: 80%;
+      .form{
+        .wrapper{
+          width: 100%;
+        }
+      }
+    }
+  }
+  .left-triangle, .right-triangle{
+    display: none;
+  }
+  .swipe-area{
+    width: 100%;
+    &_right{
+      position: static;
+    }
+    &__list{
+      dt{
+        font-size: 34px;
+      }
+      dd{
+        font-size: 25px;
+        line-height: 32px;
+      }
+    }
+  }
+  .btn-area{
+    .btn{
+      font-size: 25px;
+    }
+  }
+  .coaches{
+    height: auto;
+    &__inner{
+      width: 100%;
+      padding: 20px 80px;
+      &__list{
+        &__item{
+          margin: 20px 0;
+          width: 49%;
+          padding: 0 25px;
+          h5{
+            font-size: 28px;
+          }
+          p{
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+  .product-buy-page{
+    &__inner{
+      width: 100%;
+      .go-back{
+        &-link{
+          font-size: 26px;
+          padding-top: 20px;
+        }
+      }
+    }
+    .product-photo{
+      float: none;
+      margin: 0 auto;
+    }
+    .product-description{
+      width: 80%;
+      float: none;
+      margin: 0 auto;
+      &__header{
+        text-align: center;
+        font-size: 74px;
+      }
+      &__paragraph{
+        font-size: 21px;
+      }
+    }
+  }
+}
+
+
+@keyframes hide-menu-animate {
+
+}

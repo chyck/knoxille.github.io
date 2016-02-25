@@ -28,23 +28,42 @@ $( document ).ready(function() {
             elShow($trxDrop, 160, 900);
         }
         if($(this).scrollTop() > ($numberOneTop - winH)){
-            elShow($numberOne, -236, 500);
+            if($(window).width() >= 1200){
+                elShow($numberOne, -236, 500);
+            }
+            else{
+                elShow($numberOne, -157, 500);
+            }
         }
         if($(this).scrollTop() > $boxDropTop){
             elShow($boxDrop, 240, 700);
         }
         if($(this).scrollTop() > ($numberTwoTop - winH)){
-            $numberTwo.animate({
-                'font-size': 366
-            }, 500)
+            if($(window).width() >= 1200){
+                $numberTwo.animate({
+                    'font-size': 366
+                }, 500)
+            }
+            else{
+                $numberTwo.animate({
+                    'font-size': 254
+                }, 500)
+            }
         }
         if($(this).scrollTop() > $barDropTop){
             elShow($barDrop, 320, 700);
         }
         if($(this).scrollTop() > ($numberThreeTop - (winH + (winH/5)))){
-            $numberThree.animate({
-                'font-size': 366
-            }, 400)
+            if($(window).width() >= 1200){
+                $numberThree.animate({
+                    'font-size': 366
+                }, 500)
+            }
+            else{
+                $numberThree.animate({
+                    'font-size': 254
+                }, 500)
+            }
         }
     })
 });
